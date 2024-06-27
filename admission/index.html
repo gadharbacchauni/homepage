@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta property="og:image" content="https://gadharbacchauni.github.io/homepage/ugb.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore our clubs and extracurriculars.">
+        <meta name="keywords" content="University, Admissions, Undergraduate, Graduate, International, Application">
+        <title>Admissions - University of Gadhar Baccha</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+			.dropbtn {
+			  background-color: #3498DB;
+			  color: white;
+			  padding: 16px;
+			  font-size: 16px;
+			  border: none;
+			  cursor: pointer;
+			  width: 200px;
+			}
+			
+			.dropbtn:hover {
+				background-color: #3c7ba5;
+			}
+			.dropbtn:focus {
+			  background-color: #003b63;
+			}
+			
+			.dropdown {
+			  position: relative;
+			  display: inline-block;
+			}
+			
+			.dropdown-content {
+			  display: none;
+			  position: absolute;
+			  background-color: #f1f1f1;
+			  min-width: 160px;
+			  overflow: auto;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			  z-index: 1;
+			}
+			
+			.dropdown-content a {
+			  color: black;
+			  padding: 12px 16px;
+			  text-decoration: none;
+			  display: block;
+			}
+			
+			.dropdown a:hover {background-color: #ddd;}
+			
+			.show {display: inline;}
+        .content {
+            padding: 2rem 0;
+        }
+        .admission-section {
+            margin-bottom: 2rem;
+        }
+        .admission-section h2 {
+            color: #003366;
+        }
+        .admission-section p {
+            margin-bottom: 1rem;
+        }
+        .apply-button {
+            background-color: #003366;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .apply-button:hover {
+            background-color: #002244;
+        }
+
+		.courselists {
+			display: flex;
+			flex-direction: column;
+		}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="logo">
+                    <img src="UGB.png" alt="University_logo" width="150px">
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://gadharbacchauni.github.io/homepage/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="https://gadharbacchauni.github.io/homepage/index.html#about">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Admissions</a>
+                            <ul>
+                                <li>
+                                    <a href="#ug">Undergraduate</a>
+                                </li>
+                                <li>
+                                    <a href="#pg">Postraduate</a>
+                                </li>
+                                <li>
+                                    <a href="#doc">Doctorate</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#campus-life">Campus Life</a>
+                            <ul>
+                                <li>
+                                    <a class="comingsoon" href="#">Housing</a>
+                                </li>
+                                <li>
+                                    <a class="comingsoon" href="clubs.html">Clubs & Organizations</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="content container">
+            <section class="admission-section" id="ug">
+                <h2>Undergraduate Admissions</h2>
+                <p>The University of Gadhar Baccha offers a wide range of undergraduate programs. Our goal is to get you off from cheap school weed and giving you the real college ganja.</p>
+                <section class="courselists" id="ugcourses">
+                    <div class="dropdown">
+                        <button onclick="dropfunc('bsc')" class="dropbtn bsc">BSc Courses</button>
+                        <div id="bsc" class="dropdown-content">
+                            <a class="comingsoon" href="#">BSc in Meth</a>
+                            <a class="comingsoon" href="#about">BSc in Domestic Violence</a>
+                            <a class="comingsoon" href="#about">BSc in Gandupona</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button onclick="dropfunc('btech')" class="dropbtn btech">B Tech Courses</button>
+                        <div id="btech" class="dropdown-content">
+                            <a class="comingsoon" href="#home">B Tech in Woman Beating</a>
+                            <a class="comingsoon" href="#about">B Tech in Joint Roling</a>
+                            <a class="comingsoon" href="#contact">B Tech in Joint Roling with Specialisation in Charas</a>
+                            <a class="comingsoon" href="#contact">B Tech in Advanced Procrastination and Laziness Techniques</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button onclick="dropfunc('BA')" class="dropbtn BA">BA Courses</button>
+                        <div id="BA" class="dropdown-content">
+                            <a class="comingsoon" href="#home">BA in Gaali Galouj</a>
+                            <a class="comingsoon" href="#about">BA in Alcoholism</a>
+                            <a class="comingsoon" href="#contact">BA in Toxic realtionships</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button onclick="dropfunc('Bisiness')" class="dropbtn Bisiness">Bisiness Courses</button>
+                        <div id="Bisiness" class="dropdown-content">
+                            <a class="comingsoon" href="#home">Goru Churi</a>
+                            <a class="comingsoon" href="#about">Underground Theka Management</a>
+                            <a class="comingsoon" href="#contact">Domestic Discord and Future Parenting Failures</a>
+                            <a class="comingsoon" href="#contact">Management of Extramarital Affairs</a>
+                        </div>
+                    </div>
+					<!-- <div class="dropdown">
+                        <button onclick="dropfunc('BFA')" class="dropbtn BFA">Fine Arts & Performong Arts Courses</button>
+                        <div id="BFA" class="dropdown-content">
+                            <a class="comingsoon" href="#home">BFA Skibiddi Sigma Den</a>
+                            <a class="comingsoon" href="#home">BFA Skibiddi Dob Dob Dob Dob Yes Yes Yes Yes</a>
+                            <a class="comingsoon" href="#home">BFA Rizzling Arts</a>
+                            <a class="comingsoon" href="#home">BFA Dhahoo Dhachoo</a>
+                            <a class="comingsoon" href="#home">BFA Mewing Arts</a>
+                        </div>
+                    </div> -->
+					<div class="dropdown">
+                        <button onclick="dropfunc('BFA')" class="dropbtn BFA">Fine Arts & Performong Arts Courses</button>
+                        <div id="BFA" class="dropdown-content">
+                            <a class="comingsoon" href="#home">BFA Propaganda Memes</a>
+                            <a class="comingsoon" href="#home">BFA Skibiddi Dob Dob Dob Dob Yes Yes Yes Yes</a>
+                            <a class="comingsoon" href="#home">BFA Rizzling Arts</a>
+                            <a class="comingsoon" href="#home">BFA Cyberbullying</a>
+                            <a class="comingsoon" href="#home">BPA Terrorism</a>
+                            <a class="comingsoon" href="#home">BPA Death Threats</a>
+                            <a class="comingsoon" href="#home">BPA Drunk Driving</a>
+                            <a class="comingsoon" href="#home">BPA Mewing Arts</a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="admission-section" id="pg">
+                <h2>Postgraduate Admissions</h2>
+                <p>Our Postgraduate programs are designed for students who want to waste another few years of their lives and waste their parents' money to once again contribute nothing to society.</p>
+                <section class="courselists" id="pgcourses">
+                    <div class="dropdown">
+                        <button onclick="dropfunc('Msc')" class="dropbtn Msc">MSc Courses</button>
+                        <div id="Msc" class="dropdown-content">
+                            <a class="comingsoon" href="#">MSc in Meth Crystals</a>
+                            <a class="comingsoon" href="#">MSc in Meth Cooking</a>
+                            <a class="comingsoon" href="#about">MSc in Domestic Violence (Child Beating)</a>
+                            <a class="comingsoon" href="#about">MSc in Domestic Violence (Wife Beating)</a>
+                            <a class="comingsoon" href="#about">MSc in Domestic Violence (Emotional and Verbal Abuse)</a>
+                            <a class="comingsoon" href="#about">MSc in Gandupona (Screwing Your Career)</a>
+                            <a class="comingsoon" href="#about">MSc in Gandupona (Time Wasting)</a>
+                            <a class="comingsoon" href="#about">MSc in Gandupona (Bad Life Choices)</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button onclick="dropfunc('Mtech')" class="dropbtn Mtech">M Tech Courses</button>
+                        <div id="Mtech" class="dropdown-content">
+                            <a class="comingsoon" href="#home">M Tech in Woman Beating</a>
+                            <a class="comingsoon" href="#home">M Tech in Woman Beating With Stick</a>
+                            <a class="comingsoon" href="#about">M Tech in Joint Roling</a>
+                            <a class="comingsoon" href="#contact">M Tech in Advanced Procrastination and Laziness Techniques</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button onclick="dropfunc('MA')" class="dropbtn MA">MA Courses</button>
+                        <div id="MA" class="dropdown-content">
+                            <a class="comingsoon" href="#home">MA in Bangla Gaali Galouj</a>
+                            <a class="comingsoon" href="#home">MA in Hindi Gaali Galouj</a>
+                            <a class="comingsoon" href="#home">MA in English Gaali Galouj</a>
+                            <a class="comingsoon" href="#home">MA in Gaali Galouj in Modern Foreign Languales</a>
+                            <a class="comingsoon" href="#about">MA in Alcoholism</a>
+                            <a class="comingsoon" href="#contact">MA in Toxic Realtionships</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button onclick="dropfunc('MBisiness')" class="dropbtn MBisiness">Bisiness Courses</button>
+                        <div id="MBisiness" class="dropdown-content">
+                            <a class="comingsoon" href="#home">MBA Goru Churi</a>
+                            <a class="comingsoon" href="#home">MBA Religious Propaganda</a>
+                            <a class="comingsoon" href="#home">MBA Illegal Weapon Sales</a>
+                        </div>
+                    </div>
+					<div class="dropdown">
+                        <button onclick="dropfunc('MFA')" class="dropbtn MFA">Fine Arts & Performong Arts Courses</button>
+                        <div id="MFA" class="dropdown-content">
+                            <a class="comingsoon" href="#home">MFA Religious Propaganda Memes</a>
+                            <a class="comingsoon" href="#home">MFA Drrrr Skibiddi Dob Dob Dob Dob Yes Yes Yes Yes Dib Skibidi Dib Skibidi W W W</a>
+                            <a class="comingsoon" href="#home">MFA Cyberbullying</a>
+                            <a class="comingsoon" href="#home">MFA Cyberbullying Children</a>
+                            <a class="comingsoon" href="#home">MFA Rizzling Arts</a>
+                            <a class="comingsoon" href="#home">MPA Terrorism</a>
+                            <a class="comingsoon" href="#home">MPA Terrorism with Specialisation in Fake Bomb Threats</a>
+                            <a class="comingsoon" href="#home">MPA Death Threats</a>
+                            <a class="comingsoon" href="#home">MPA Death Threats to Entire Families</a>
+                            <a class="comingsoon" href="#home">MPA Drunk Driving</a>
+                            <a class="comingsoon" href="#home">MPA Drunk Driving With Children in Front Seat</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- <div class="soon">coming soon..</div> -->
+            </section>
+            <section class="admission-section" id="doc">
+                <h2>Doctorate Admissions (coming soon)</h2>
+                <p>The University of Gadhar Baccha is thrilled to welcome the exceptional individuals who have achieved such extraordinary levels of gandupona that they're ready to take their chaos to the next level. Our doctorate program is designed for those miserable bitches who aspire to elevate their expertise in domestic violence and cocaine consumption. Join us to push the boundaries of alcoholism and make your mark in the world of unparalleled gadhapona.</p>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; 2024 University of Gadhar Baccha. All rights reserved.</p>
+            <section id="contact">
+                email:
+                <a class="email" href="mailto:gadharbacchauni@gmail.com">gadharbacchauni@gmail.com</a>
+            </section>
+        </footer>
+    </body>
+</html>
+<script src="admission.js"></script>
