@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Undergraduate Admissions Application for the University of Gadhar Baccha.">
+        <meta name="keywords" content="University, Admissions, Undergraduate, Application">
+        <title>Undergraduate Admissions - University of Gadhar Baccha</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+        .content {
+            padding: 2rem 0;
+        }
+        .form-section {
+            margin-bottom: 2rem;
+        }
+        .form-section h2 {
+            color: #003366;
+        }
+        .form-section form {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-section form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        .form-section form input, 
+        .form-section form textarea, 
+        .form-section form select {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-section form button {
+            background-color: #003366;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-section form button:hover {
+            background-color: #002244;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="logo">
+                    <img src="UGB.png" alt="University_logo" width="150px">
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="admissions.html">Admissions</a>
+                            <ul>
+                                <li>
+                                    <a href="admission/ug.html">Undergraduate</a>
+                                </li>
+                                <li>
+                                    <a href="admission/pg.html">Postgraduate</a>
+                                </li>
+                                <li>
+                                    <a href="admission/doctorate.html">Doctorate</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="academics.html">Academics</a>
+                        </li>
+                        <li>
+                            <a href="campus-life.html">Campus Life</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="content container">
+            <section class="form-section">
+                <h2>Undergraduate Admissions Application</h2>
+                <form action="submit-application.html" method="post">
+                    <label for="name">Full Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    >
+                    <label for="dob">Date of Birth:</label>
+                    <input
+                        type="date"
+                        id="dob"
+                        name="dob"
+                        required
+                    >
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+                    <label for="phone">Phone Number:</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        required
+                    >
+                    <label for="address">Address:</label>
+                    <textarea
+                        id="address"
+                        name="address"
+                        rows="3"
+                        required
+                    ></textarea>
+                    <label for="board">Board:</label>
+                    <select name="board" id="">
+                        <option value="">--</option>
+                        <option value="cbse">Central Board of Secondary Education (CBSE)</option>
+                        <option value="isc">Indian School Certificate (ISC)</option>
+                        <option value="state">State Board</option>
+                    </select>
+                    <label for="highschool">School Name:</label>
+                    <input
+                        type="text"
+                        id="highschool"
+                        name="highschool"
+                        required
+                    >
+                    <label for="graduation">Year of Graduation:</label>
+                    <input
+                        type="number"
+                        id="graduation"
+                        name="graduation"
+                        required
+                    >
+                    <label for="sat">SAT Score:</label>
+                    <input type="number" id="sat" name="sat">
+                    <label for="act">ACT Score:</label>
+                    <input type="number" id="act" name="act">
+                    <label for="personal-statement">Personal Statement:</label>
+                    <textarea
+                        id="personal-statement"
+                        name="personal-statement"
+                        rows="5"
+                        required
+                    ></textarea>
+                    <label for="recommendation">Letters of Recommendation:</label>
+                    <input
+                        type="file"
+                        id="recommendation"
+                        name="recommendation"
+                        multiple
+                    >
+                    <button type="submit">Submit Application</button>
+                </form>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; 2024 University of Gadhar Baccha. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
